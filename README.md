@@ -11,7 +11,7 @@ Follow this steps to install Docker-compose:
 https://docs.docker.com/compose/install/
 
 Package:
-https://github.com/psgabriel/zbx_srv4_zbx_agt_mysql5_apache2.git
+https://github.com/psgabriel/docker_zabbix4.git
 
 Before install, ensure there are no listened this ports:
 3306, 33060, 10050, 10051 and 80
