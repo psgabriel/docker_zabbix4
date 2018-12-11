@@ -30,3 +30,6 @@ zabbix_agent
 zabbix_front
 zabbix_server
 zabbix_db
+
+Can be necessary allow Zabbix Server connects to Zabbix Agent through Firewall.
+Allow with this: iptables -A INPUT -p tcp -s 172.6.0.3 --dport 10050 -m state --state NEW,ESTABLISHED -j ACCEPT
