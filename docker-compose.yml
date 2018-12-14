@@ -31,7 +31,6 @@ services:
       - MYSQL_PORT=3306
     volumes: 
       - /var/lib/mysql:/var/lib/mysql/
-      - ./db:/db
     tty: true
     #restart: always
   #
@@ -57,7 +56,6 @@ services:
       - MYSQL_PORT=3306
     volumes:
       - /zabbix_scripts:/zabbix_scripts/
-      - ./app:/zabbix
     tty: true
     depends_on: 
       - zabbix_db

@@ -7,4 +7,5 @@ sed -i s/MYSQL_PASSWORD/$MYSQL_PASSWORD/g /var/www/html/conf/zabbix.conf.php
 sed -i s/ZABBIX_SERVER_HOST/$ZABBIX_SERVER_HOST/g /var/www/html/conf/zabbix.conf.php
 sed -i s/ZABBIX_SERVER_PORT/$ZABBIX_SERVER_PORT/g /var/www/html/conf/zabbix.conf.php
 sed -i s/ZABBIX_SERVER_NAME/$ZABBIX_SERVER_NAME/g /var/www/html/conf/zabbix.conf.php
+rm -rf /run/httpd/httpd.pid
 /usr/sbin/httpd -DFOREGROUND

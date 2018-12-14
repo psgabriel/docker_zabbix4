@@ -18,7 +18,7 @@ RUN ./configure --prefix=/usr/local/zabbix --enable-server --with-net-snmp --wit
     make install
 
 RUN mv /usr/local/zabbix/etc/zabbix_server.conf /usr/local/zabbix/etc/zabbix_server_original.conf && \
-    cp /usr/bin/zabbix_get /usr/local/zabbix/sbin/zabbix_get
+    cp /usr/bin/zabbix_get /usr/local/zabbix/sbin/zabbix_get && \
     cp /zbx/zabbix_server.conf /usr/local/zabbix/etc/zabbix_server.conf && \
     chmod -R 777 /usr/local/zabbix/*
 
