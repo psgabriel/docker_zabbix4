@@ -1,4 +1,4 @@
-FROM centos:7
+FROM localhost:5000/centos:7
 
 RUN yum -y install sudo vim fping telnet configure net-tools gcc make libxml2-devel net-snmp-devel libcurl-devel openssl-devel crontabs libevent-devel
 

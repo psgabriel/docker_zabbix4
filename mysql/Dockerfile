@@ -1,5 +1,5 @@
 #FROM oraclelinux:7-slim
-FROM centos:7
+FROM localhost:5000/centos:7
 ARG MYSQL_SERVER_PACKAGE=mysql-community-server-minimal-5.7.24
 ARG MYSQL_SHELL_PACKAGE=mysql-shell-8.0.13
 

@@ -1,4 +1,4 @@
-FROM centos:7
+FROM localhost:5000/centos:7
 
 ENV YUM_REPO_URL="https://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm"
 RUN rpm -ivh ${YUM_REPO_URL} && \

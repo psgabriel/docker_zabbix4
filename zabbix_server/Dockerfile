@@ -1,4 +1,4 @@
-FROM centos:7
+FROM localhost:5000/centos:7
 
 ENV YUM_REPO_URL="https://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm"
 ENV YUM_ZBXGET_REPO_URL="https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-get-4.0.1-1.el7.x86_64.rpm"
