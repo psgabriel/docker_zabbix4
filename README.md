@@ -44,7 +44,6 @@ Check if all services are running:
 ```
 docker ps -a
 ```
-Can be necessary allow Zabbix Server connects to Zabbix Agent through Firewall.
 Adjust your local iptables:
 ```
 iptables -A INPUT -p tcp -s 172.6.0.3 --dport 10050 -m state --state NEW,ESTABLISHED -j ACCEPT
