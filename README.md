@@ -9,13 +9,13 @@ Internet connection,
 4 cores cpus, 8gb ram, 50G free disk at least
 ```
 
-# Follow this steps to install Docker-compose:
+# Follow these steps to install Docker-compose:
 https://docs.docker.com/compose/install/
 
 # Package:
 https://github.com/psgabriel/docker_zabbix4.git
 
-Before install, ensure there are no listened this ports:
+Before install, ensure there are no listened these ports:
 ```
 3306, 33060, 10050, 10051 and 80
 ```
@@ -45,7 +45,7 @@ Check if all services are running:
 docker ps -a
 ```
 Can be necessary allow Zabbix Server connects to Zabbix Agent through Firewall.
-Allow with this:
+Adjust your local iptables:
 ```
 iptables -A INPUT -p tcp -s 172.6.0.3 --dport 10050 -m state --state NEW,ESTABLISHED -j ACCEPT
 ```
